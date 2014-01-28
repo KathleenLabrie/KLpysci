@@ -1,5 +1,5 @@
 from scipy import optimize
-from numpy import *
+import numpy as np
 
 class Parameter:
     def __init__(self, value):
@@ -19,6 +19,6 @@ def nlfit(function, parameters, y, x = None):
             i += 1
         return y - function(x)
 
-    if x is None: x = arange(y.shape[0])
+    if x is None: x = np.arange(y.shape[0])
     p = [param() for param in parameters]
     optimize.leastsq(f, p)
