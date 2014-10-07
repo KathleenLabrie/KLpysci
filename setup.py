@@ -53,7 +53,7 @@ setup(
       #},
       
       #package_data = {
-      #                 'reduxGemini': [''],
+      #                 'klpysci': [''],
       #                },
       
       data_files = DATA_FILES,
