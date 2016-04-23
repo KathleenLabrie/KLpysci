@@ -29,7 +29,7 @@ install:
 # command to run tests
 script: 
   - python setup.py develop && py.test --cov=klpysci
-  - pylint --rcfile=pylintrc klpyastro
+  - pylint --rcfile=pylintrc klpysci
 after_success:
   - coveralls
 
